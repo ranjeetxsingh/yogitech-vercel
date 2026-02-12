@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "/backend/server.js"
+      "destination": "https://yogitech-backend.onrender.com/api/$1"
     },
     {
       "source": "/(.*)",

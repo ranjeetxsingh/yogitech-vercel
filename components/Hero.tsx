@@ -74,7 +74,7 @@ const Hero: React.FC = () => {
   return (
     <>
       <div 
-        className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-slate-50 dark:bg-slate-950 group"
+        className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-slate-50 dark:bg-slate-950 group pb-20 md:pb-0"
         onMouseMove={handleMouseMove}
       >
         {/* Dynamic Spotlight Overlay */}

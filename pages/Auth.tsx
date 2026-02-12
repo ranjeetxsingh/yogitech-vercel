@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { api } from '../services/api';
-import { Lock, Mail, User, ArrowLeft, ArrowRight, Info } from 'lucide-react';
+import { Lock, Mail, User, ArrowLeft, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import ThemeToggle from '../components/ui/ThemeToggle';
 
@@ -144,14 +144,7 @@ const Auth: React.FC = () => {
               {error && <div className="text-red-500 text-sm text-center bg-red-50 dark:bg-red-900/20 p-2 rounded">{error}</div>}
 
               {/* Admin Hint */}
-              <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800 rounded-lg p-3 text-xs text-blue-800 dark:text-blue-300 flex gap-2">
-                 <Info className="w-4 h-4 flex-shrink-0 mt-0.5" />
-                 <div>
-                   <strong>Demo Admin Access:</strong><br/>
-                   Email: admin@yogitech.co.nz<br/>
-                   Password: admin
-                 </div>
-              </div>
+
 
               <button
                 type="submit"

@@ -14,10 +14,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, index }) => {
 
   return (
     <motion.div 
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, x: 50 }}
+      whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.4, delay: index * 0.05 }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
       whileHover={{ y: -5 }}
       className="group flex flex-col h-full bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 transition-all duration-300 hover:shadow-xl dark:hover:shadow-blue-900/10 hover:border-blue-500/30"
     >
